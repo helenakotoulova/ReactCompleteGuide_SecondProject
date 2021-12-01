@@ -1,0 +1,45 @@
+.userInputDiv {
+    background-color:white;
+    color:black;
+    font-weight: bold;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    margin: 5rem auto;
+    padding:10px;
+    width: 40rem;
+
+}
+
+.form {
+    font-size: inherit;
+    display: block;
+    padding: 5px;
+}
+
+.form label {
+    display: block;
+}
+
+.form input {
+    margin-bottom: 0.5rem;
+    height: 1.5rem;
+    width: 100%;
+}
+
+.actions {
+    text-align:left;
+}
+
+.actions button {
+    font-size: inherit;
+    background-color: rgb(87, 0, 128);
+    color: white;
+    cursor: pointer;
+    padding: 0.25rem 1rem;
+}
+
+.actions button:hover,
+.actions button:active {
+    background-color:rgb(127, 3, 184);
+    color: white;
+}
