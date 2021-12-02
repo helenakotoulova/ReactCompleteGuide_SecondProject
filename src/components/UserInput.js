@@ -4,7 +4,6 @@ import { useState } from "react";
 function UserInput(props) {
   const [jmeno, setJmeno] = useState("");
   const [age, setAge] = useState("");
-  const [invalid, setInvalid]=useState(false);
 
   function jmenoHandler(event) {
     setJmeno(event.target.value);
@@ -16,16 +15,10 @@ function UserInput(props) {
 
   function submitHandler(event) {
     event.preventDefault();
-    if (jmeno.length===0 || age.length=== 0 || parseInt(age)<=0) {
-        console.log('invalid here')
-        setInvalid(true);
-        props.onIsValid(invalid);
-        return;
-    }
-    const userData = { jmeno: jmeno, age: age};
+    const userData = { jmeno: jmeno, age: age };
     props.onAddNewUser(userData);
-    setJmeno('');
-    setAge('');
+    setJmeno("");
+    setAge("");
   }
 
   return (

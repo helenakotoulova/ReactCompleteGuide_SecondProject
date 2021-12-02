@@ -13,3 +13,8 @@
     padding:10px;
     width: 40rem;
 }
+
+.alternativeContent {
+    text-align: center;
+    font-size: inherit;
+}

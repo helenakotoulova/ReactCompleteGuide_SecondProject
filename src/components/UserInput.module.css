@@ -36,6 +36,7 @@
     color: white;
     cursor: pointer;
     padding: 0.25rem 1rem;
+    border-radius: 5px;
 }
 
 .actions button:hover,
